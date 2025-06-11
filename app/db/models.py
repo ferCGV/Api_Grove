@@ -15,6 +15,17 @@ class servicios (SQLModel,table=True):
     nombre : str= Field (index=True)
     precio : int = Field(index=True)
 
+class barberos (SQLModel,table=True):
+    id : int = Field(default=None,primary_key=True)
+    nombre: str =Field(index=True)
+    sueldo : int =Field(index=True)
+    telefono : str =Field(index=True)
+    email : EmailStr=Field(index=True)
+
+
+
+
+
 
 
 
